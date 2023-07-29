@@ -1,0 +1,7 @@
+In detail topic explainer for people looking to learn any topic quickly
+Use a python backend with MVC components
+The view needs to allow users to type in any topic to learn
+Then it should generate a short resource that is some combination of text (using openai's api) video (by linking to a relevant youtube video), a visual, and/or links to relevant resources on the web
+It should give the user a reasonable amount of time to go through the resources by displaying a timer. when the timer is up it should ask questions to the user about the topic, depending on how well the user answers the questions it should adjust the learning resources from more beginner level to expert
+Please generate the html and javascript to run the app in browser using only the code you generate
+
