@@ -1,5 +1,7 @@
 # The directory where you want your virtual environment.
 VENV_DIR := venv
+UVICORN := $(VENV_DIR)/bin/uvicorn
+APP_MODULE := main:app
 
 # The Python command you want to use. Change if necessary.
 PYTHON := python3
@@ -18,3 +20,7 @@ activate:
 .PHONY: clean
 clean:
 	rm -rf $(VENV_DIR)
+
+.PHONY: run-server
+run-server:
+	$(UVICORN) $(APP_MODULE) --reload
