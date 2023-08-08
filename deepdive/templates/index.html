@@ -20,7 +20,18 @@
     <main>
         <h2>About</h2>
         <p>This is a stylish and modern webpage. You can replace this text with any information you'd like.</p>
-
+        
+        <div id="main">
+        <form>
+            <label for="dive">Dive in to:</label>
+            <input id="dive" name="q" type="dive" placeholder="I'm curious about ...">
+            <button hx-post="/messages" hx-target="#main">
+                Dive
+            </button>
+        </form>
+        </div>
+  
+  
         <h2>Contact</h2>
         <p>If you have any questions, feel free to <a href="mailto:example@example.com">email us</a>.</p>
     </main>

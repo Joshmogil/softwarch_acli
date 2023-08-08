@@ -1,0 +1,7 @@
+curl -X POST \
+  -H "Content-type: application/json" \
+  -H "Accept: application/json" \
+  -d '{"email":"johndoe@mail.com", "password":"hunter2"}' \
+  "http://localhost:8000/login"
+
+curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lQG1haWwuY29tIiwiZXhwIjoxNjkxNTM0MTM3fQ.4TVahRrzXp08biJjJiQPWA855pSmmSFG8O5XnqlA89Q" http://localhost:8000/protected
